@@ -75,8 +75,8 @@
 					// Scrollex.
 						$section.scrollex({
 							mode: 'middle',
-							top: '-20vh',
-							bottom: '-20vh',
+							top: '-10vh',
+							bottom: '-10vh',
 							initialize: function() {
 
 								// Deactivate section.
@@ -104,7 +104,6 @@
 						});
 
 				});
-
 		}
 
 	// Scrolly.
@@ -178,6 +177,21 @@
 					// Activate section.
 						$(this).removeClass('inactive');
 
+				}
+			});
+
+		$('.awards')
+			.scrollex({
+				mode: 'middle',
+				top: '-20vh',
+				bottom: '-20vh',
+				initialize: function() {
+				// Deactivate section.
+					$(this).addClass('inactive');
+				},
+				enter: function() {
+				// Activate section.
+					$(this).removeClass('inactive');
 				}
 			});
 
