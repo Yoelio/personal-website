@@ -2887,6 +2887,12 @@ input, select, textarea {
 
 		}
 
+/* Awards */
+
+	ul.awards > li {
+		margin: 1em;
+	}
+
 /* Section/Article */
 
 	section.special, article.special {
@@ -3089,23 +3095,6 @@ input, select, textarea {
 				transition: opacity 1s ease, transform 1s ease;
 				opacity: 1;
 			}
-
-/* TODO: Make spotlights go darker in gradient */
-		/* .spotlights > section:nth-child(2) {
-			background-color:  #1ad698;
-		}
-
-		.spotlights > section:nth-child(3) {
-			background-color:  #16b682;
-		}
-
-		.spotlights > section:nth-child(4) {
-			background-color: #139a6e;
-		}
-
-		.spotlights > section:nth-child(5) {
-			background-color: rgba(var(#493382), 0.20);
-		} */
 
 		.spotlights > section.inactive > .image:before,
 		body.is-preload .spotlights > section > .image:before {
