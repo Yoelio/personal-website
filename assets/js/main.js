@@ -181,4 +181,20 @@
 				}
 			});
 
+	// Background color change with scroll
+		$body
+			.scrollex({
+				scroll: function(progress) {
+					const [r1, g1, b1] = [32, 254, 181]
+					const [r2, g2, b2] = [0, 6, 82]
+					const [r, g, b] = [
+						r1 * (1 - progress) + r2 * progress,
+						g1 * (1 - progress) + g2 * progress,
+						b1 * (1 - progress) + b2 * progress,
+					]
+					$body.css("background-color", `rgb(${r}, ${g}, ${b})`)
+					$sidebar.css("background-color", `rgb(${r}, ${g}, ${b})`)
+				}
+			})
+
 })(jQuery);
