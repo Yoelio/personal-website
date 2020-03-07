@@ -2504,6 +2504,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
+		font-size: 1.25em;
 		position: relative;
 	}
 

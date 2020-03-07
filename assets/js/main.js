@@ -195,6 +195,6 @@
 					$body.css("background-color", `rgb(${r}, ${g}, ${b})`)
 					$sidebar.css("background-color", `rgb(${r}, ${g}, ${b})`)
 				}
-			})
+			});
 
 })(jQuery);
