@@ -2966,6 +2966,7 @@ input, select, textarea {
 		-ms-flex-direction: row;
 		flex-direction: row;
 		min-height: 22.5em;
+		padding: 1em 0 0 0;
 	}
 
 		body.is-ie .spotlights > section {
@@ -2975,7 +2976,7 @@ input, select, textarea {
 		.spotlights > section > .image {
 			background-position: center center;
 			background-size: cover;
-			border-radius: 0;
+			border-radius: 1em;
 			display: block;
 			position: relative;
 			width: 25em;
@@ -2991,7 +2992,7 @@ input, select, textarea {
 				-webkit-transition: opacity 1s ease;
 				-ms-transition: opacity 1s ease;
 				transition: opacity 1s ease;
-				background: rgba(49, 36, 80, 0.9);
+				background: rgba(36, 43, 80, 0.9);
 				content: '';
 				display: block;
 				height: 100%;
@@ -3000,6 +3001,7 @@ input, select, textarea {
 				position: absolute;
 				top: 0;
 				width: 100%;
+				border-radius: 1em;
 			}
 
 		.spotlights > section > .content {
@@ -3880,3 +3882,8 @@ input, select, textarea {
 			}
 
 		}
+
+/* Projects */
+    #projects .icons {
+		font-size: 1.15em;
+	}
