@@ -76,7 +76,6 @@
 						$section.scrollex({
 							mode: 'middle',
 							top: '-14vh',
-							bottom: '-15vh',
 							initialize: function() {
 
 								// Deactivate section.
