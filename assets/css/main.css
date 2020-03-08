@@ -3826,12 +3826,25 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 540px) {
 
-			/* #sidebar {
-				display: none;
-			} */
+			#sidebar {
+				height: 3em;
+				left: 0;
+				overflow: visible;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				width: 100%;
+			}
 
+				#sidebar nav a {
+					height: inherit;
+					line-height: inherit;
+					padding: 0;
+					font-size: 0.4em;
+					color: white;
+				}
 		}
 
 /* Intro */
