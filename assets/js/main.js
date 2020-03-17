@@ -211,7 +211,12 @@
 
 		var $icons = $('#intro .icons').find('li');
 		$icons.on('mouseenter', function() {
-			$('#icon_desc').html($(this).attr('aria-label'))
+			$('#icon_desc').html($(this).attr('aria-label'));
+			$('#icon_desc').removeClass('inactive');	
 		})
-			
+
+		$icons.on('mouseleave', function() {
+			$('#icon_desc').addClass('inactive');
+		})
+
 })(jQuery);

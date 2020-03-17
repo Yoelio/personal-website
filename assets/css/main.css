@@ -3881,6 +3881,51 @@ input, select, textarea {
 			font-size: 1.25em;
 			color: white;
 		}
+		
+		#intro p#icon_desc {
+			font-size: 1em;
+			color: white;
+			-moz-transform: translateY(-1em);
+			-webkit-transform: translateY(-1em);
+			-ms-transform: translateY(-1em);
+			transform: translateY(-1em);
+			-moz-transition: opacity 1s ease, -moz-transform 500ms ease;
+			-webkit-transition: opacity 1s ease, -webkit-transform 500ms ease;
+			-ms-transition: opacity 1s ease, -ms-transform 500ms ease;
+			transition: opacity 1000ms ease, transform 1000ms ease;
+			opacity: 1;
+		}
+
+		#intro p#icon_desc.inactive{
+			-moz-transform: translateY(1em);
+			-webkit-transform: translateY(1em);
+			-ms-transform: translateY(1em);
+			transform: translateY(1em);
+			opacity: 0;
+		}
+
+
+		@keyframes slide {
+			from {
+			  transform: translateY(0%);
+			}
+		  
+			to {
+			  transform: translateY(100%);
+			  opacity: 0;
+			}
+		  }
+
+		  .slideup {
+			animation-duration: 350ms;
+			animation-name: slide;
+			animation-direction: reverse;
+		  }
+
+		  /* .slidedown {
+			animation-duration: 500ms;
+			animation-name: slide;
+		  } */
 
 			@media screen and (max-width: 980px) {
 
