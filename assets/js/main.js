@@ -48,7 +48,6 @@
 				.on('click', function() {
 
 					var $this = $(this);
-
 					// External link? Bail.
 						if ($this.attr('href').charAt(0) != '#')
 							return;
@@ -210,4 +209,9 @@
 				}
 			});
 
+		var $icons = $('#intro .icons').find('li');
+		$icons.on('mouseenter', function() {
+			$('#icon_desc').html($(this).attr('aria-label'))
+		})
+			
 })(jQuery);
