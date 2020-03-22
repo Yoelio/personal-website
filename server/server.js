@@ -1,7 +1,7 @@
 const express = require('express');
-const port = 3000;
+const PORT = process.env.PORT || 8080;
 
-const app = express()
+const app = express();
 
 app.use('/static', express.static('images'));
-app.listen(port, () => console.log("server is running on port " + port));
+app.listen(PORT, () => console.log("server is running on port " + PORT));
