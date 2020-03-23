@@ -1,0 +1,12 @@
+service: client
+runtime: python27
+threadsafe: true
+
+handlers:
+- url: /
+  static_files: index.html
+  upload: index.html
+
+- url: /(.*)
+  static_files: assets/\1
+  upload: assets/(.*)

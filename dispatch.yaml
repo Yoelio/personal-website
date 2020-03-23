@@ -1,0 +1,7 @@
+dispatch:
+  - url: "yoel.io/*"
+    service: client
+  - url: "www.yoel.io/*"
+    service: client
+  - url: "api.yoel.io/*"
+    service: server
